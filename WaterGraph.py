@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+<<<<<<< HEAD
 class Graph:
     def __init__(self, label1, label2, label3, value1, value2, value3, title):
         self.label1 = label1
@@ -21,4 +22,8 @@ title = input("Enter Graph Title: ")
 g1 = Graph(label1, label2, label3, value1, value2, value3, title)
 plt.title(str(g1.title))
 plt.bar([g1.label1, g1.label2, g1.label3], [g1.value1, g1.value2, g1.value3])
+=======
+plt.title("Water Graph")
+plt.bar(["Personal", "Industry", "Algosm"], [8, 32, 60] )
+>>>>>>> facc85fbbbb23f109665f377f6858d518a28c835
 plt.show()
