@@ -19,7 +19,7 @@
 #LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 #OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 #SOFTWARE.
-#
+
 
 
 
@@ -45,5 +45,5 @@ value3 = input("Enter Graph Values 3: ")
 title = input("Enter Graph Title: ")
 g1 = Graph(label1, label2, label3, value1, value2, value3, title)
 plt.title(str(g1.title))
-plt.bar([g1.label1, g1.label2, g1.label3], [g1.value1, g1.value2, g1.value3])
+plt.bar([g1.label1, g1.label2, g1.label3], [g1.value1, g1.value2, g1.value3], align="center")
 plt.show()
