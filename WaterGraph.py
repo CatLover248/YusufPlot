@@ -36,6 +36,7 @@ class Graph:
         self.title = title
 
 
+
 label1 = input("Enter Graph Label 1: ")
 label2 = input("Enter Graph Label 2: ")
 label3 = input("Enter Graph Label 3: ")
@@ -43,7 +44,9 @@ value1 = input("Enter Graph Values 1: ")
 value2 = input("Enter Graph Values 2: ")
 value3 = input("Enter Graph Values 3: ")
 title = input("Enter Graph Title: ")
-g1 = Graph(label1, label2, label3, value1, value2, value3, title)
-plt.title(str(g1.title))
-plt.bar([g1.label1, g1.label2, g1.label3], [g1.value1, g1.value2, g1.value3], align="center")
-plt.show()
+graph_type = input("What type of graph do you want to use? [Staple(buggy), Cake]")
+def staple_graph():
+    g1 = Graph(label1, label2, label3, value1, value2, value3, title)
+    plt.title(str(g1.title))
+    plt.bar([g1.label1, g1.label2, g1.label3], [g1.value1, g1.value2, g1.value3], align="center")
+    plt.show()
