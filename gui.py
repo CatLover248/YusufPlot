@@ -1,16 +1,19 @@
-#imports
-from tkinter import *
+#Old code
+'''
+    #imports
+    from tkinter import *
 
-import plot
+    import plot
 
 
-def create_onbuttonpress(x,y):
+    def create_onbuttonpress(x,y,title):
     print("Create button has been pressed")
-    g1 = plot.Plot(x,y, "title")
-    g1.plot_graph()
+    print(x,y,title)
+    #g1 = plot.Plot(x,y, title)
+    #g1.plot_graph()
 
 
-def window():
+    def window():
 
     MainWindow = Tk()
 
@@ -60,8 +63,9 @@ def window():
 
     # - - create - -
 
-    create_button = Button(text="Create", width=8, height=1, bg="gray", command=lambda: create_onbuttonpress((x_tb1.get(1.0, "end-1c"), x_tb2.get(1.0, "end-1c"), x_tb3.get(1.0, "end-1c")), (y_tb1.get(1.0, "end-1c"), y_tb2.get(1.0, "end-1c"), y_tb3.get(1.0, "end-1c"))))
+    create_button = Button(text="Create", width=8, height=1, bg="gray", command=lambda: create_onbuttonpress((x_tb1.get(1.0, "end-1c"), x_tb2.get(1.0, "end-1c"), x_tb3.get(1.0, "end-1c")), (y_tb1.get(1.0, "end-1c"), y_tb2.get(1.0, "end-1c"), y_tb3.get(1.0, "end-1c")), title_tb1.get(1.0, "end-1c")))
     create_button.pack()
 
     #Main window loop
     MainWindow.mainloop()
+'''
