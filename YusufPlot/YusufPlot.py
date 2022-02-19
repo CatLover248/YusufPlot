@@ -1,6 +1,8 @@
 import plot
 import consolegui
 
+#YusufPlot b1
+
 '''
 plots example:
 g1 = plot.Plot((3,4,5), (4,9,4), "hello")
