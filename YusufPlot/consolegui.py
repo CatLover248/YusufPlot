@@ -1,4 +1,5 @@
-
+import colorama
+import os
 
 class ConsoleGui:
     def __init__(self, header, text):
@@ -7,5 +8,12 @@ class ConsoleGui:
 
 
     def console_write(self):
-        print(f"    < {self.header} >    ")
-        print(f"{self.text}")
+        print(colorama.Fore.CYAN + "<| " + self.header + " |>")
+        print(colorama.Fore.BLUE + self.text)
+    
+
+def console_clear_text():
+        if os.name == "nt" or "dos":
+            os.system("cls")
+        else:
+            os.system("clear")
