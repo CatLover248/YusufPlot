@@ -30,11 +30,13 @@ while True:
 
     consolegui.ConsoleGui("Create Plot", "Enter a title for your plot").console_write()
     plot_title_input = input(" Title >  ")
+
+    plot_title = plot_title_input
     plot_x = (plot_x_1_inp, plot_x_2_inp, plot_x_3_inp)
     plot_y = (plot_y_1_inp, plot_y_2_inp, plot_y_3_inp)
     consolegui.console_clear_text()
 
-    p1 = plot.Plot(plot_x, plot_y, plot_title_input)
+    p1 = plot.Plot(plot_x, plot_y, plot_title)
     p1.plot_graph()
 
     consolegui.ConsoleGui("Would you like to quit YusufPlot?", "yes/no")
@@ -54,7 +56,6 @@ while True:
 
 #quits program at loop end
 quit()
-
 
 
 
